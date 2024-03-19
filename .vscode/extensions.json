@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker-russian",
+    "meganrogge.template-string-converter",
+    "wayou.vscode-todo-highlight",
+    "ritwickdey.liveserver"
+  ]
+}
