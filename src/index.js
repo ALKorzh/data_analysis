@@ -111,7 +111,6 @@ function renderHeader(prices) {
     }
   }
 }
-renderHeader(prices)
 
 function renderBody(prices, data) {
   for (let i = 0; i < data.length; i++) {
@@ -143,11 +142,28 @@ function renderBody(prices, data) {
           data[i][Object.keys(prices)[productCounter - 1]] *
           prices[Object.keys(prices)[productCounter - 1]]
         ).toFixed(2)
-        console.log(total)
+        // console.log(total)
         continue
       }
     }
   }
 }
 
-renderBody(prices, companyProducts)
+function paginateAndRender(page_size, page_number, prices, data) {
+  table.innerHTML = ''
+
+  renderHeader(prices)
+
+  let paginatedData = paginate(page_size, page_number, data)
+
+  renderBody(prices, paginatedData)
+}
+
+function paginate(page_size, page_number, data) {
+  let start = (page_number - 1) * page_size
+  let end = page_number * page_size
+
+  return data.slice(start, end)
+}
+
+paginateAndRender(3, 1, prices, companyProducts)
