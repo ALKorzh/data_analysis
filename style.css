@@ -2,3 +2,43 @@ td {
     border: 1px solid black;
 
 }
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+tr:hover {
+    background-color: rgb(91, 90, 90);
+}
+
+td {
+    border: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+button,
+select {
+    max-width: 300px;
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: gray;
+    color: white;
+}
